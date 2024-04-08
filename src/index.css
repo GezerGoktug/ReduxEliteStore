@@ -8,6 +8,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#products{
+  background-image: url("/public/img/shopping.png");
+  background-size: contain;
+}
 /*! Scrollbar design  */
 html::-webkit-scrollbar {
   width: 10px;

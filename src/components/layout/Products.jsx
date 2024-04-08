@@ -31,7 +31,7 @@ const Products = ({ category }) => {
   }, [category, isLoading, data, memoizedData]);
 
   return (
-    <section className="bg-[url('img/shopping.png')]  bg-contain col-span-5 grid grid-cols-1 min-[500px]:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-slate-500 p-6">
+    <section id="products" className=" col-span-5 grid grid-cols-1 min-[500px]:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-slate-500 p-6">
       {isLoading
         ? [1, 2, 3, 4, 5, 6].map((index) => <ProductCardSkeleton key={index} />)
         : filteredData.map((product) => (
