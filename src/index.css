@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-header,
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*! Scrollbar design  */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  @apply bg-green-300;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply bg-green-800 rounded-xl hover:bg-green-900 transition-colors;
+}
